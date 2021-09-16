@@ -10,17 +10,23 @@ public class Q10950 {
 		
 		int T = Integer.parseInt(sc.nextLine());
 		
-		for ( int i = 0 ; i <= T ; i++) {
-			String N = sc.nextLine();
-			String[] s = N.split(" ");
-			int A = Integer.parseInt(s[i]);
-			int B = Integer.parseInt(s[i+1]);
+		String N = null;
+		String[] s = null;
+		
+		
+		for ( int i = 0 ; i < T ; i++) {
+			N = sc.nextLine();
+			s = N.split(" ");
+		}	
+		
+		for ( int i = 0 ; i < T ; i++) {
+		
+			int A = Integer.parseInt(s[2*i]);
+			int B = Integer.parseInt(s[2*i+1]);
 			
 			System.out.println(A+B);
-		}
-		
-		
-		
+
+		}	
 		
 		sc.close();
 		
