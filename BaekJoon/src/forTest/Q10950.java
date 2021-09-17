@@ -17,15 +17,15 @@ public class Q10950 {
 		for ( int i = 0 ; i < T ; i++) {
 			N = sc.nextLine();
 			s = N.split(" ");
-		}	
-		
-		for ( int i = 0 ; i < T ; i++) {
-		
-			int A = Integer.parseInt(s[2*i]);
-			int B = Integer.parseInt(s[2*i+1]);
+			
+			System.out.println(i+"¹øÂ° : "+s.length);
+			
+			int A = Integer.parseInt(s[i]);
+			int B = Integer.parseInt(s[i+1]);
 			
 			System.out.println(A+B);
-
+			
+			
 		}	
 		
 		sc.close();
