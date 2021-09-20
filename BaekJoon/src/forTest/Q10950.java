@@ -13,18 +13,14 @@ public class Q10950 {
 		String N = null;
 		String[] s = null;
 		
-		
 		for ( int i = 0 ; i < T ; i++) {
 			N = sc.nextLine();
 			s = N.split(" ");
 			
-			System.out.println(i+"¹øÂ° : "+s.length);
-			
-			int A = Integer.parseInt(s[i]);
-			int B = Integer.parseInt(s[i+1]);
+			int A = Integer.parseInt(s[0]); 
+			int B = Integer.parseInt(s[1]); 
 			
 			System.out.println(A+B);
-			
 			
 		}	
 		
