@@ -12,9 +12,13 @@ public class Q2439 {
 		
 		for ( int n = 1 ; n <= X ; n++ ) {
 			
-			System.out.printf("%"+X+"s","*");
+			for ( int i = X-n ; i > 0 ; i-- ) {
+				
+				System.out.print(" ");
+				
+			}
 			
-			for ( int i = 1 ; i < n ; i++ ) {
+			for ( int i = 0 ; i < n ; i++ ) {
 				
 				System.out.print("*");
 				
