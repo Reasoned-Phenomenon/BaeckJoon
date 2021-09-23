@@ -1,8 +1,8 @@
-package inputAndArithmetics;
+package inputAndArithmeticsTest;
 
 import java.util.Scanner;
 
-public class Q1000 {
+public class Q10998 {
 
 	public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Q1000 {
 		
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		int c = a+b;
+		int c = a*b;
 		
 		System.out.println(c);
 		sc.close();

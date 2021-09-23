@@ -1,4 +1,4 @@
-package inputAndArithmetics;
+package inputAndArithmeticsTest;
 
 public class Q10171 {
 

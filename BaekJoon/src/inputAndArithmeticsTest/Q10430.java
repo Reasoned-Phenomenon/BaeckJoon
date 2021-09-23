@@ -1,4 +1,4 @@
-package inputAndArithmetics;
+package inputAndArithmeticsTest;
 
 import java.util.Scanner;
 
