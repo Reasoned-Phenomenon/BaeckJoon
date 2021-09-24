@@ -10,7 +10,7 @@ public class Q11654 {
 
 		String s = sc.nextLine();
 		char[] cc = s.toCharArray();
-		char c = cc[0];
+		int c = cc[0];
 		
 		System.out.println(c);	
 				
