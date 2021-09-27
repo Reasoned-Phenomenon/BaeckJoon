@@ -26,8 +26,14 @@ public class Q2908 {
 		int bb = (b/10)-(10*ba); 
 		int bc = b - (100*ba) - (10 * bb);
 		
+		int newA = 100 * ac + 10 * ab + aa;
+		int newB = 100 * bc + 10 * bb + ba;
 		
-		
+		if (newA > newB) {
+			System.out.println(newA);
+		} else if ( newA < newB ) {
+			System.out.println(newB);
+		}
 		
 		sc.close();
 		
