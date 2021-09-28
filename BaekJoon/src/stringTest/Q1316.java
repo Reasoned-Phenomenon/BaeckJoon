@@ -13,11 +13,13 @@ public class Q1316 {
 		int N = Integer.parseInt(sc.nextLine());
 		String s = null;
 		String[] ss = null;
-		int cnt = 0 ;
+		
 		int match = 0;
-		Set<String> set = new HashSet<>();
 		
 		for ( int i = 0 ; i < N ; i ++ ) {
+			
+			Set<String> set = new HashSet<>();
+			int cnt = 0 ;
 			
 			s = sc.nextLine();
 			ss = s.split("");
@@ -26,7 +28,7 @@ public class Q1316 {
 				set.add(ss[n]);
 			}
 			
-			for (int n = 1 ; n <= ss.length ; n++) {
+			for (int n = 1 ; n < ss.length ; n++) {
 				
 				if ( ! ss[n-1].equals(ss[n])) {
 					cnt++;
@@ -35,9 +37,8 @@ public class Q1316 {
 			}
 			
 			int size = set.size();
-			System.out.println("===num " + size);
-			System.out.println("===cnt " + cnt);
-			if ( cnt == size) {
+			
+			if ( cnt == size-1) {
 				match++;
 			}
 			
