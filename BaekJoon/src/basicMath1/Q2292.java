@@ -12,16 +12,19 @@ public class Q2292 {
 		int cnt = 0;
 		
 		//1+3(n)(n+1)
-		for ( int i = 1 ; i < N ; i++) {
+		//i < x 에서 x 값 구하기
+		for ( int i = 0 ; i < N ; i++) {
 			
 			if ( N == 1) {
 				System.out.println(1);
-			} else if ( (N >=(1+3*i*(i+1)))&&(N <= (1+3*(i+1)*(i+2)))) {
-				cnt = i+1;
+				break;
+			} else if ( (N >=(1+3*i*(i+1))+1)&&(N <= (1+3*(i+1)*(i+2)))) {
+				cnt = i+2;
+				System.out.println("==="+cnt);
 			}
 		}
 		
-		System.out.println(cnt+1);
+		System.out.println(cnt);
 		
 		sc.close();
 		
