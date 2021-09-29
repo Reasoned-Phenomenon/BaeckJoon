@@ -16,12 +16,13 @@ public class Q2292 {
 		for ( int i = 0 ; i < N ; i++) {
 			
 			if ( N == 1) {
-				System.out.println(1);
+				cnt = 1 ;
 				break;
 			} else if ( (N >=(1+3*i*(i+1))+1)&&(N <= (1+3*(i+1)*(i+2)))) {
 				cnt = i+2;
-				System.out.println("==="+cnt);
-			}
+				break;
+			} 
+			
 		}
 		
 		System.out.println(cnt);
