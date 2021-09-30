@@ -1,0 +1,13 @@
+Q2869 
+1老 : cnt:1
+ 撤 : V - A 
+ 广 : V - (A - B) = V-m
+ 
+2老 : cnt:2
+ 撤 : V - (A - B) - A 
+ 广 : V - (A - B) - (A - B) = V-2m
+ 
+ 
+ 
+ 
+ https://st-lab.tistory.com/75

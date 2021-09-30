@@ -9,6 +9,7 @@ public class Q2869 {
 		Scanner sc = new Scanner(System.in);
 		
 		String ABV = sc.nextLine();
+		long t1 = System.nanoTime();
 		String[] abv = ABV.split(" ");
 		
 		int A = Integer.parseInt(abv[0]);
@@ -33,6 +34,8 @@ public class Q2869 {
 		System.out.println(cnt);
 		
 		sc.close();
+		long t2 = System.nanoTime();
+		System.out.println(t2-t1);
 	}
 
 }
