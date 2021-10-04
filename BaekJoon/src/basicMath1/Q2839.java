@@ -13,21 +13,39 @@ public class Q2839 {
 		int f = 0;
 		int t = 0;
 
-		if ( N % 15 == 0 ) {
-			f = N/5;
-			t = (N%5)/3;
-			System.out.println(f+t);
-		} else if ( N % 5 == 0 ) {
-			f = N/5;
-			System.out.println(f+t);
-		} else if ( N % 3 == 0) {
-			t = N/3;
-			System.out.println(f+t);
-		} else {
+		if ( N == 1 || N == 2 || N == 4 || N == 7) {
+			
 			System.out.println(-1);
+			
+		} else {
+			switch(N%5) {
+			
+				case 0: {
+					f = N/5;
+				} break;
+				
+				case 1: {
+					f = (N/5) - 1;
+					t = (N-f*5)/3;
+				} break;
+				
+				case 2: {
+					f = (N/5) - 2;
+					t = (N-f*5)/3;
+				} break;
+				
+				case 3: {
+					f = (N/5);
+					t = (N-(f*5))/3;
+				} break;
+				
+				case 4:{
+					f = (N/5) - 1;
+					t = (N-f*5)/3;
+				}
+			}
+			System.out.println(f+t);
 		}
-		
 		sc.close();
 	}
-
 }
